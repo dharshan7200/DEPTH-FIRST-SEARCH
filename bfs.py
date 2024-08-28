@@ -24,13 +24,11 @@ def bfs(graph,start,visited,path):
     visited[start] = True
     while len(queue) != 0:
         tmpnode = queue.popleft()
-        #TYPE UR CODE HERE
     return path
 
 graph = defaultdict(list)
 v,e = map(int,input().split())
 for i in range(e):
-    #TYOE UR CODE HERE
 
 start = '0'
 path = []
