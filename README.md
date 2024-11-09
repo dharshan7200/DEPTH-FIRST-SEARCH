@@ -68,46 +68,8 @@ Now, Queue becomes empty, So, terminate these process of iteration.
 
 </ol>
 
-<hr>
-<h3>Sample Input</h3>
-<hr>
-7 9 <BR>
-A B <BR>
-A C <BR>
-A F <BR>
-C E <BR>
-C F <BR>
-C D <BR>
-D E <BR>
-D G <BR>
-G F <BR>
-<hr>
-<h3>Sample Output</h3>
-<hr>
-['A', 'B', 'C', 'F', 'E', 'D', 'G']
-
-<hr>
-
-<hr>
-<h3>Sample Input</h3>
-<hr>
-5 6 <BR>
-0 1 <BR>
-0 2 <BR>
-1 2 <BR>
-1 3 <BR>
-2 4 <BR>
-3 4 <BR>
-<hr>
-<h3>Sample Output</h3>
-<hr>
-['0', '1', '2', '3', '4']
-<hr>
-<h3>Program:</h3>
-<p>
-  
-```
-
+## Program:
+``` PY
 from collections import deque
 from collections import defaultdict
 
@@ -118,12 +80,12 @@ FOR EVERY EDGE
 U V
 7 9
 A B
-A C
+A C 
 A F
 C E
 C F
 C D
-D E
+D E 
 D G
 G F
 '''
@@ -135,34 +97,60 @@ def bfs(graph,start,visited,path):
     while len(queue) != 0:
         tmpnode = queue.popleft()
         for neighbour in graph[tmpnode]:
-          if not visited[neighbour]:
-            path.append(neighbour)
-            queue.append(neighbour)
-            visited[neighbour]=True
+            if visited[neighbour] == False:
+                path.append(neighbour)
+                queue.append(neighbour)
+                visited[neighbour] = True
     return path
 
 graph = defaultdict(list)
 v,e = map(int,input().split())
 for i in range(e):
-    u,v=input().split()
+    u,v = map(str,input().split())
     graph[u].append(v)
     graph[v].append(u)
-start = '0'
+
+start = 'A'
 path = []
 visited = defaultdict(bool)
 traversedpath = bfs(graph,start,visited,path)
 print(traversedpath)
-
 ```
 
-</p>
+<h3>Sample Input</h3>
+
+7 9 <BR>
+A B <BR>
+A C <BR>
+A F <BR>
+C E <BR>
+C F <BR>
+C D <BR>
+D E <BR>
+D G <BR>
+G F <BR>
+
+<h3>Sample Output</h3>
+
+![Screenshot ](Op1-ai3.png)
+
+
+<h3>Sample Input</h3>
+
+5 6 <BR>
+0 1 <BR>
+0 2 <BR>
+1 2 <BR>
+1 3 <BR>
+2 4 <BR>
+3 4 <BR>
+
+<h3>Sample Output</h3>
+
+![Screenshot ](Op2-ai3.png)
+
+
+
 <h3>Result:</h3>
-<hr>
+
 <p>Thus,a Graph was constructed and implementation of Breadth First Search for the same graph was done successfully.</p>
-
-
-
-
-
-
-
