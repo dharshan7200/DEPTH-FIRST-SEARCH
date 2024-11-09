@@ -132,7 +132,7 @@ G F <BR>
 
 <h3>Sample Output</h3>
 
-![Screenshot ](Op1-ai3.png)
+![Op1-ai3](https://github.com/user-attachments/assets/dad62f20-077e-4f73-8ec2-96db58fe755c)
 
 
 <h3>Sample Input</h3>
@@ -147,7 +147,7 @@ G F <BR>
 
 <h3>Sample Output</h3>
 
-![Screenshot ](Op2-ai3.png)
+![Op2-ai3](https://github.com/user-attachments/assets/32b9e659-a7e9-4085-ae77-406762fff83a)
 
 
 
