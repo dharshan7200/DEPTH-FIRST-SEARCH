@@ -68,6 +68,39 @@ Now, Queue becomes empty, So, terminate these process of iteration.
 
 </ol>
 
+<h3>Sample Input</h3>
+
+7 9 <BR>
+A B <BR>
+A C <BR>
+A F <BR>
+C E <BR>
+C F <BR>
+C D <BR>
+D E <BR>
+D G <BR>
+G F <BR>
+
+<h3>Sample Output</h3>
+
+![Op1-ai3](https://github.com/user-attachments/assets/dad62f20-077e-4f73-8ec2-96db58fe755c)
+
+
+<h3>Sample Input</h3>
+
+5 6 <BR>
+0 1 <BR>
+0 2 <BR>
+1 2 <BR>
+1 3 <BR>
+2 4 <BR>
+3 4 <BR>
+
+<h3>Sample Output</h3>
+
+![Op2-ai3](https://github.com/user-attachments/assets/32b9e659-a7e9-4085-ae77-406762fff83a)
+
+
 ## Program:
 ``` PY
 from collections import deque
@@ -116,39 +149,6 @@ visited = defaultdict(bool)
 traversedpath = bfs(graph,start,visited,path)
 print(traversedpath)
 ```
-
-<h3>Sample Input</h3>
-
-7 9 <BR>
-A B <BR>
-A C <BR>
-A F <BR>
-C E <BR>
-C F <BR>
-C D <BR>
-D E <BR>
-D G <BR>
-G F <BR>
-
-<h3>Sample Output</h3>
-
-![Op1-ai3](https://github.com/user-attachments/assets/dad62f20-077e-4f73-8ec2-96db58fe755c)
-
-
-<h3>Sample Input</h3>
-
-5 6 <BR>
-0 1 <BR>
-0 2 <BR>
-1 2 <BR>
-1 3 <BR>
-2 4 <BR>
-3 4 <BR>
-
-<h3>Sample Output</h3>
-
-![Op2-ai3](https://github.com/user-attachments/assets/32b9e659-a7e9-4085-ae77-406762fff83a)
-
 
 
 <h3>Result:</h3>
